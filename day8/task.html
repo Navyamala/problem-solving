@@ -7,21 +7,40 @@
 </head>
 <body>
     <script>
-        prime_count=0
-        for(i=50;i<=100;i++){
-            fact=0;
-            for(j=2;j<i;j++){
-                if(i%j===0){
-                    fact++
-                    break;
-                }
+        // maximum value in array
+        let arr=[9,3,2,5,6,10]
+        max=arr[0]
+        for(i=0;i<arr.length;i++){
+            if(arr[i]>max){
+                max=arr[i]
             }
-        if(fact===0){
-            console.log(i,"is prime")
-            prime_count++
-        }
-    }
-    console.log(prime_count)
+        }console.log(max);
+
+        // sum of maximum and minimum values in array
+        let arr1=[-1,-2,-3,-4,-10]
+        max=arr1[2]
+        min=arr1[1]
+        for(i=0;i<arr1.length;i++){
+            if(arr1[i]>max){
+                max=arr1[i]
+            }if(arr1[i]<min){
+                min=arr1[i]
+            }
+        }console.log(max+min);
+        
+// duplicate values in array
+let arr2=[1,2,1,3,2,4,5]
+         res=[]
+         dup=[]
+         for(i=0;i<arr2.length;i++){
+            if(!res.includes(arr2[i])){
+                res.push(arr2[i])
+            }else{
+                dup.push(arr2[i])
+            }
+         }console.log(dup);
+         
+
     </script>
 </body>
 </html>
