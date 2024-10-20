@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Finder</title>
+</head>
+<body>
+<script>
+    // Task 1: Find the previous prime number 
+    let n = 57;
+    for (let i = n - 1; i >= 2; i--) {
+        let fact = 0;
+        for (let j = 2; j < i; j++) {
+            if (i % j === 0) {
+                fact++;
+                break;  
+            }
+        }
+        if (fact === 0) {
+            console.log("The previous prime is:", i);
+            break;  
+        }
+    }
+
+    // Task 2: Find the largest prime number between a and b
+    let a = 50;
+    let b = 100;
+    let largest_prime = 0;
+
+    for (let i = a; i <= b; i++) {
+        let fact = 0;
+        for (let j = 2; j < i; j++) {
+            if (i % j === 0) {
+                fact++;
+                break;  
+            }
+        }
+        if (fact === 0) {
+            largest_prime = i;  
+        }
+    }
+
+    if (largest_prime !== 0) {
+        console.log("The largest prime between", a, "and", b, "is:", largest_prime);
+    }
+</script>
+
+</body>
+</html>

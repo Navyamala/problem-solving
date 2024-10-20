@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Notes</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+}
+
+#addNote {
+    margin: 20px;
+}
+
+#noteContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sticky-note {
+    background-color: yellow;
+    padding: 10px;
+    margin: 10px;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    resize: both;
+    overflow: auto;
+}
+
+.delete-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 2px 5px;
+}
+
+    </style>
+</head>
+<body>
+    <button id="addNote">Add Sticky Note</button>
+    <div id="noteContainer"></div>
+    <script>
+        document.getElementById('addNote').addEventListener('click', function() {
+    createStickyNote();
+});
+
+function createStickyNote() {
+    // Create the sticky note element
+    const note = document.createElement('div');
+    note.classList.add('sticky-note');
+
+    // Create a delete button for the note
+    const deleteBtn = document.createElement('button');
+    deleteBtn.classList.add('delete-btn');
+    deleteBtn.innerText = 'X';
+    deleteBtn.addEventListener('click', function() {
+        note.remove();
+    });
+
+    // Create a text area for writing notes
+    const textArea = document.createElement('textarea');
+    textArea.style.width = '100%';
+    textArea.style.height = 'calc(100% - 30px)'; // Leave space for the delete button
+
+    // Append elements to the note
+    note.appendChild(deleteBtn);
+    note.appendChild(textArea);
+
+    // Append the note to the container
+    document.getElementById('noteContainer').appendChild(note);
+}
+    </script>
+</body>
+</html>

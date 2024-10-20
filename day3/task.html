@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //    given two numbers return the  count of even numbers between them input: 0,10  count=5
+    let a=+prompt("Enter starting number:")
+    let b=+prompt("Enter ending number:")
+    count=0
+   for(let i=1;i<=b;i++){
+    if(i%2==0){
+        console.log(i)  
+        count++;
+    }
+   }
+  console.log("The count of even numbers is:",count)  
+//task-2
+// given a number print 20 multiples of that number in table format 5 X 1 = 5..........5 X 20 = 100
+  num=5;
+  for(i=5;i<=num;i++){
+    for(j=1;j<=20;j++){
+        console.log(i+"X"+j+"="+i*j)
+    }
+
+  }
+
+    
+
+</script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// 1. write a Armstrong number in a arrow function
+
+    const isArmstrong=(num)=>{
+    let check=num
+    let final=num
+    let pow=0
+    let sum=0
+    while(num!=0){
+    num%10
+    num=Math.floor(num/10)
+    pow++
+}
+while(check!=0){
+    let digit=check%10;
+    sum=sum+(digit**pow)
+    check=Math.floor(check/10)
+}
+if(sum===final){
+    console.log("It is a armstrong number");
+}
+else{
+    console.log("It is not a armstrong number")
+}
+    }
+    isArmstrong(153);
+
+// 2. write LCM in a named function
+ function LCM(a,b){
+    let min;
+    if(a>b){
+    min=b;
+    }
+else{
+     min=a;
+}
+    let max=a>b?a:b;
+    if(max%a===0 && max%b===0){
+        console.log(max,"is the LCM")
+    }
+    else{
+        check=max
+        while(true){
+            check++
+            if(check%a===0&&check%b===0){
+            console.log(check,"is the LCM")
+            break;
+        }
+    }
+}
+ }
+    LCM(3,15);
+
+    // 3. find the length of the number in a function
+     function length(num){
+        let length=0;
+        while(num!=0){
+            num=Math.floor(num/10);
+            length++
+        }
+        return length;
+     }
+     let number=123456;
+     console.log("The length of the number in a function is:",length(number));
+
+     // 4. take a number eg.1234 ,check for prime number .if prime number exist then print true or false
+    let num=1234
+    inc=false;
+    while(num!=0){
+        fact=0
+        digit=num%10
+        if(digit>1){
+        for(i=2;i<digit;i++){
+           if(digit%i===0) {
+            fact++
+            break;
+           }
+        }
+    if(fact==0){
+    inc=true;
+    break;
+    }
+}
+    num=Math.floor(num/10) 
+}  
+    if(inc){
+        console.log(true)
+    }
+    else{
+        console.log(false)
+    }
+    </script>
+</body>
+</html>

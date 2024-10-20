@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sum(a,b,prime){
+            return prime(a+b)
+        }
+        function prime(num){
+        fact=0
+        for(i=2;i<num;i++){
+            if(num%i==0){
+                fact++
+                break;
+            }
+        }
+
+        if(fact==0){
+            console.log("its prime")
+        }
+        else{
+            console.log("not prime")
+        }
+    }
+       console.log(sum(10,13,prime))
+    </script>
+</body>
+</html>
