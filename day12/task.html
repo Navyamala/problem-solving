@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // even matrix-->middle elements
+        let matrix=[[1,2,3,4],[5,6,7,8],[9,10,11,12],[13,14,15,16]]
+        let mid_row=Math.floor(matrix.length/2);
+        let mid_row2=mid_row-1;
+         let mid_col=Math.floor(matrix[mid_row].length/2);
+         let mid_col2=Math.floor(mid_col/2);
+        console.log(matrix[mid_row2][mid_col2], matrix[mid_row2][mid_col], matrix[mid_row][mid_col2], matrix[mid_row][mid_col]);
+         //another method
+         let matrix1=[[1,2,3,4],[5,6,7,8],[9,10,11,12],[13,14,15,16]]
+         let middle_ele=[matrix[1][1],matrix[1][2],matrix[2][1], matrix[2][2]];
+         console.log(middle_ele)
+
+         //average of even odd
+         let arr=[1,2,3,4,5,6]
+         even=[]
+         odd=[]
+         let evensum =0;
+         let oddsum = 0;
+         for(i of arr){
+            if(i%2==0){
+                even.push(i)
+            }
+        else{
+        odd.push(i)
+        
+      }
+         }
+         console.log(even,odd)
+        for(i of even){
+            evensum+=i
+        }
+        let avg=(evensum/even.length);
+        console.log(avg)
+      for(i of odd){
+        oddsum+=i
+      }
+      let avg1=(oddsum/odd.length);
+      console.log(avg1)
+    </script>
+</body>
