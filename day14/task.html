@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //take a string and return the count of vowels and consonants
+        let str = "navyautivelly";
+       count=0
+    for(i of str){
+        if(i=="a"||i=="e"||i=="i"||i=="o"||i=="u"){
+            console.log(i);
+            count++
+            
+        }
+    }
+    console.log("The vowel count is:",count)
+     count=0
+    for(i of str){
+        if(i!=="a"&&i!=="e"&&i!=="i"&&i!=="o"||i=="u"){
+            console.log(i);
+            count++
+        }
+    }
+    console.log("The consonant count is:",count);
+    //take a string and return the count of  uppercase and lowercase characeters 
+    let string = "navyaUTIVELLY";
+    let uppercaseCount = 0;
+    let lowercaseCount = 0;
+    for (let i of string) {
+    if (i===i.toUpperCase()&&i!== i.toLowerCase()) {
+        uppercaseCount++;
+    } else if (i===i.toLowerCase()&&i !== i.toUpperCase()) {
+        lowercaseCount++;
+    }
+}
+console.log("Uppercase characters: " + uppercaseCount);
+console.log("Lowercase characters: " + lowercaseCount);
+  
+// print the vowels in the even indexes
+//    input: " programme"
+//    output : o,e
+      let input = "programme";
+        vowels = "aeiouAEIOU";
+         result = "";
+       for(i=0;i<input.length;i++) {
+       if(i%2===0&&vowels.includes(input[i])) {
+        result+=input[i]+",";
+     }
+   }
+  if (result.length > 0) {
+    result = result.slice(0, -1); 
+}
+console.log(result);
+    </script>
+</body>
+</html>
