@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aqua;
+        }
+        #app{
+            display: grid;
+            grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+            padding: 24px;
+            gap: 20px;
+        }
+        .notes{
+            height: 300px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            border: none;
+            box-shadow: 0 0 7px rgba(0,0,0,0.15);
+            resize: none;
+            background-color: lightpink;
+            border-radius: 5%;
+        }
+        .add_notes{
+            height: 300px;
+            font-size: 50px;
+            background-color: rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5%;
+        }
+        .add_notes:hover{
+            background-color: rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+<textarea class="notes"></textarea>
+<textarea class="notes"></textarea>
+  <button class="add_notes">+</button>
+    </div>
+    <script>
+        function addNotes(){
+           let newNote=document.createElement("textarea")  
+           newNote.classList.add("notes")
+           newNote.placeholder="New Notes.."
+    
+         newNote.addEventListener("dblclick",function(){
+            newNote.remove();
+         })
+         document.getElementById("app").appendChild(newNote)
+        }
+        document.querySelector(".add_notes").addEventListener("click",addNotes)
+
+    </script>
+</body>
+</html>

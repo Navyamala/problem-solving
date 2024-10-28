@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            background-color: aqua;
+        }
+        #app{
+            display: grid;
+            grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
+           padding: 24px; 
+           gap: 20px;
+        }
+        .notes{
+            height: 300px;
+            width: 300px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            border:none ;
+            box-shadow: 0 0 7px rgba(0,0,0,0.15);
+            resize: none;
+        }
+        .add_notes{
+            height: 300px;
+            width: 300px;
+            font-size: 80px;
+            color: rgba(0,0,0,0.5);
+            background-color: rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+   .add_notes:hover{
+    background-color:rgba(0,0,0,0.2) ;
+   }
+   .button{
+    text-align: center;
+   }
+    </style>
+</head>
+<body>
+     <div id="app">
+     <textarea class="notes"></textarea>
+     <textarea class="notes"></textarea>
+     <textarea class="notes"></textarea>
+     <textarea class="notes"></textarea>
+     <div class="button">
+     <button class="add_notes">+</button>
+    </div>
+     </div>
+     <script>
+        //function to add sticky
+        function addNote(){
+         const newNote=document.createElement("textarea")
+         newNote.classList.add("notes")
+         newNote.placeholder="new Note.."
+    
+        //add addevenListener
+        newNote.addEventListener("dblclick", function() {
+            newNote.remove();
+        });
+        document.getElementById("app").appendChild(newNote)
+    }
+        document.querySelector(".add_notes").addEventListener("click",addNote)
+     </script>
+</body>
+</html>

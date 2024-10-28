@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+
+    <!-- Custom CSS for Font -->
+    <style>
+      body {
+        font-family:cursive;
+        overflow-x: hidden;
+      }
+      .html{
+        overflow-x: hidden;
+      }
+      h2 {
+        font-weight: 700;
+      }
+      p {
+        font-weight: 400;
+      }
+      .card:hover {
+                transform: scale(1.05);
+                box-shadow: 0 8px 16px rgba(195, 146, 146, 0.3);
+              }
+  .timeline {
+    position: relative;
+    padding: 0;
+    list-style: none;
+  }
+  .timeline-item {
+    position: relative;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .timeline-item:before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background: #ddd;
+    top: 0;
+    bottom: 0;
+    left: 20px;
+  }
+  .timeline-icon {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    left: 10px;
+    background: #ddd;
+    z-index: 1;
+  }
+  .timeline-content {
+    margin-left: 40px;
+  }
+  .timeline-title {
+    font-weight: bold;
+  }
+  .icon img {
+    width: 20px; /* Adjust size as needed */
+    height: auto;
+  }
+  
+</style>
+  </head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Portfolio</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#about">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#education">Education</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#projects">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#Internships">Internships & WorkExperience</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#technicalskills">Technical skills</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#Soft skills">Soft skills</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#Achievements">Achievements</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- about -->
+<section id="about" class="py-5 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <!-- Profile Photo -->
+          <img src="my image.jpg" class="img-fluid rounded-circle mb-4" alt="Your Photo"> 
+        </div>
+        <div class="col-lg-8">
+          <!-- About Content -->
+          <h2 class="animate__animated animate__fadeInDown">About Me</h2>
+          <p class="animate__animated animate__fadeInUp">Hello! I'm Navyamala Utivelly,and I am a recent graduate with a degree in B.Tech in Computer Science . I love creating clean, efficient, and responsive web applications. With a focus on user experience, my goal is to design and develop seamless solutions for complex problems.</p>
+          <p class="animate__animated animate__fadeInUp animate__delay-1s">When I'm not coding, I enjoy exploring new technologies, reading about the latest in tech innovations, and hiking in nature to recharge."</p>
+          <p class="animate__animated animate__fadeInUp animate__delay-1s"> I am currently seeking opportunities in software development, where I can apply my knowledge and grow as a professional. I'm excited about joining a team where I can contribute to impactful projects and continue honing my skills."
+            <br><br><br>
+            <br><br><br>
+            <!-- education -->
+            <section id="education" class="container my-5">
+                <h2 class="text-center">Educational Background</h2>
+                <div class="timeline">
+                  <div class="timeline-item animate__animated animate__fadeIn animate__delay-1s">
+                    <div class="timeline-icon bg-success"></div>
+                    <div class="timeline-content">
+                      <h5 class="timeline-title">B.Tech in Computer Science</h5>
+                      <h6 class="text-muted">Malla Reddy Institue Of Technology and Science</h6>
+                      <p>Graduated: June 2024. </p>
+                      <p>CPGA:7.64/10</p>
+                    </div>
+                  </div>
+                  <br><br><br>
+                  <div class="timeline-item animate__animated animate__fadeIn animate__delay-2s">
+                    <div class="timeline-icon bg-success"></div>
+                    <div class="timeline-content">
+                      <h5 class="timeline-title">Intermediate</h5>
+                      <h6 class="text-muted">Kshatriya Junior College</h6>
+                      <p>Completed: December 2020. </p>
+                      <p>Marks:972/1000</p>
+                    </div>
+                  </div>
+                  <div class="timeline-item animate__animated animate__fadeIn animate__delay-2s">
+                    <div class="timeline-icon bg-success"></div>
+                    <div class="timeline-content">
+                      <h5 class="timeline-title">School</h5>
+                      <h6 class="text-muted">Sri Bhas hita High School</h6>
+                      <p>Completed: April 2018. </p>
+                      <p>CGPA:9.5/10</p>
+                    </div>
+                  </div>
+                </div>
+              </section>             
+              
+
+
+
+
+              
+            
+              
+            <!-- technical skills -->
+            <h2 class="animate__animated animate__fadeInDown">Technical skills</h2>
+            <div class="row">
+                <div class="col-md-4">
+                  <div class="card">
+                    <img src="web.jpg" class="card-img-top" alt="Skill 1">
+                    <div class="card-body">
+                      <h5 class="card-title">Web Development</h5>
+                      <p class="card-text">Expertise in creating responsive, user-friendly websites using HTML, CSS, JavaScript, and frameworks like Bootstrap.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card">
+                    <img src="python-img.jpg" class="card-img-top" alt="Skill 2">
+                    <div class="card-body">
+                      <h5 class="card-title">Python Programming</h5>
+                      <p class="card-text">"Currently, I am learning more about Python's application and I am keen to dive deeper into machine learning"</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                      <img src="sql.png" class="card-img-top" alt="Skill 1">
+                      <div class="card-body">
+                        <h5 class="card-title">Database</h5>
+                        <p class="card-text">"I am proficient in writing SQL queries to extract, manipulate, and analyze data.Additionally, I am familiar with creating databases,tables."</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card">
+                      <img src="vs git.png" class="card-img-top" alt="Skill 1">
+                      <div class="card-body">
+                        <h5 class="card-title">Developer tools</h5>
+                        <p class="card-text">"I am proficient in using Git for version control, including tasks like branching, merging, and resolving conflicts. I use GitHub for hosting repositories, collaborating on projects, and managing code reviews."</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card">
+                      <img src="bootstraap.png" class="card-img-top" alt="Skill 1">
+                      <div class="card-body">
+                        <h5 class="card-title">Frameworks</h5>
+                        <p class="card-text">"I have experience using Bootstrap to create responsive and visually appealing web pages."</p>
+                  </div>
+                  </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card">
+                      <img src="java.jpg" class="card-img-top" alt="Skill 1">
+                      <div class="card-body">
+                        <h5 class="card-title">Java</h5>
+                        <p class="card-text">""I am keen to expand my knowledge of Java by learning more about advanced topics such as multithreading, Java frameworks (like Spring), and Java Enterprise Edition (EE).""</p>
+                  </div>
+                  </div>
+                  </div>
+              </div>
+              
+              
+              
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Frontend Developer Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #000;
+      color: white;
+      overflow-x: hidden;
+    }
+    .header {
+      text-align: center;
+      padding: 50px;
+    }
+    .header h1 span {
+      font-weight: bold;
+      color: orange;
+    }
+    .header h1 {
+      font-size: 3rem;
+    }
+    .profile-pic {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 30px;
+    }
+    .btn-custom {
+      background: linear-gradient(to right, #8e2de2, #4a00e0);
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 50px;
+    }
+    .btn-custom:hover {
+      background: linear-gradient(to right, #f12711, #f5af19);
+    }
+    .navbar {
+      padding-top: 30px;
+      padding-bottom: 10px;
+      background: transparent;
+    }
+    .navbar-nav .nav-link {
+      color: white;
+      font-weight: bold;
+      margin-right: 15px;
+    }
+    .navbar-nav .nav-link:hover {
+      color: orange;
+    }
+    .section {
+      display: none;
+    }
+    .section.active {
+      display: block;
+    }
+    .about-section, .services-section, .portfolio-section, .contact-section {
+      padding: 50px;
+      text-align: center;
+    }ody {
+      background-color: #000;
+      color: white;
+    }
+    .about-section {
+      padding: 50px;
+      text-align: center;
+    }
+    .about-section h2 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+    .about-section h2 span {
+      color: #fc4a1a;
+      font-weight: bold;
+    }
+    .profile-img {
+      border-radius: 10px;
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+    .skills .progress {
+      height: 10px;
+      margin-bottom: 15px;
+    }
+    .progress-bar {
+      background: linear-gradient(to right, #8e2de2, #4a00e0);
+    }
+    .progress-bar-html {
+      width: 90%;
+    }
+    .progress-bar-react {
+      width: 85%;
+    }
+    .progress-bar-js {
+      width: 80%;
+    }
+    .progress-bar-nextjs {
+      width: 75%;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navyamala<span>Utivelly</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home" onclick="navigate('home')">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about" onclick="navigate('about')">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services" onclick="navigate('services')">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio" onclick="navigate('portfolio')">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact" onclick="navigate('contact')">Contact</a>
+          </li>
+        </ul>
+        <a href="#" class="btn btn-custom">Connect With Me</a>
+      </div>
+    </div>
+  </nav>
+  <!-- Home Section -->
+  <div id="home" class="section header active">
+    <img src="my image.jpg" alt="Profile Picture" class="profile-pic">
+    <h1>I'm <span>Navyamala Utivelly</span>,Recent B.Tech 2024 graduate in Computer Science Engineering</h1>
+    <p>Eager to contribute to a collaborative environment and continue learning in the rapidly evolving tech space.<br> Seeking opportunities to apply my skills and creativity as a Full Stack Developer or Frontend Developer.</p>
+    <div class="mt-4">
+      <a href="#" class="btn btn-custom me-2">Connect with me</a>
+      <a href="#" class="btn btn-outline-light">My resume</a>
+    </div>
+  </div>
+<br><br><br><br>
+  <!-- About Me Section -->
+  <div id="about" class="section about-section">
+    <h2>About Me</h2>
+    <p>Hello! I'm Navyamala Utivelly,and I am a recent graduate with a degree in B.Tech in Computer Science . I love creating clean, efficient, and responsive web applications.<br> With a focus on user experience, my goal is to design and develop seamless solutions for complex problems.
+    When I'm not coding, I enjoy exploring new technologies, reading about the latest in tech innovations, and hiking in nature to recharge."
+    I am currently seeking opportunities in software development, where I can apply my knowledge and grow as a professional. I'm excited about joining a team where I can contribute to impactful projects and continue honing my skills."</p>
+  </div>
+<!-- About Me Section -->
+<div class="container about-section">
+  <h2>About <span>Me</span></h2>
+  <div class="row align-items-center mt-5">
+    <!-- Profile Picture -->
+    <div class="col-md-4 text-center">
+      <img src="https://via.placeholder.com/300" alt="Profile Picture" class="profile-img">
+    </div>
+  <!-- Portfolio Section -->
+  <div id="portfolio" class="section portfolio-section">
+    <h2>Portfolio</h2>
+    <p>Here are some of my recent projects. I have worked on multiple web applications and websites for diverse clients.</p>
+  </div>
+
+  <!-- Contact Section -->
+  <div id="contact" class="section contact-section">
+    <h2>Contact Me</h2>
+    <p>Email: alex@example.com</p>
+    <p>Phone: 123-456-7890</p>
+  </div>
+      <!-- About Description and Skills -->
+      <div class="col-md-8">
+        <p>
+          I am an experienced Frontend Developer with a strong foundation in building scalable and responsive web applications. With a solid understanding of core frontend technologies, I have collaborated with multiple teams to develop dynamic user experiences.
+        </p>
+        <p>
+          My passion for frontend development is not only reflected in my growing skill set but also in the enthusiasm and dedication I bring to each project.
+        </p>
+      <br><br><br><br>
+      <!-- Services Section -->
+  <div id="services" class="section services-section">
+    <h2>Services</h2>
+    <p>I offer frontend development services to build modern and responsive websites, ensuring a seamless user experience across all devices.</p>
+  </div>
+        <!-- Skills Progress Bars -->
+        <div class="skills">
+          <p>HTML & CSS</p>
+          <div class="progress">
+            <div class="progress-bar progress-bar-html" role="progressbar"></div>
+          </div>
+          
+          <p>React JS</p>
+          <div class="progress">
+            <div class="progress-bar progress-bar-react" role="progressbar"></div>
+          </div>
+          
+          <p>JavaScript</p>
+          <div class="progress">
+            <div class="progress-bar progress-bar-js" role="progressbar"></div>
+          </div>
+          
+          <p>Next JS</p>
+          <div class="progress">
+            <div class="progress-bar progress-bar-nextjs" role="progressbar"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Internal Routing Script -->
+  <script>
+    // Handle navigation and display the corresponding section
+    function navigate(section) {
+      // Hide all sections
+      document.querySelectorAll('.section').forEach((sec) => {
+        sec.classList.remove('active');
+      });
+
+      // Show the selected section
+      document.getElementById(section).classList.add('active');
+
+      // Scroll to the top of the section
+      window.scrollTo(0, 0);
+    }
+
+    // Initial page load
+    window.onload = function() {
+      // Get the current hash (e.g., #about) and navigate to it
+      const hash = window.location.hash ? window.location.hash.substring(1) : 'home';
+      navigate(hash);
+    };
+
+    // Update section on hash change
+    window.onhashchange = function() {
+      const hash = window.location.hash.substring(1);
+      navigate(hash);
+    };
+  </script>
+</body>
+</html>
