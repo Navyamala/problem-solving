@@ -40,6 +40,24 @@
         }console.log(s);
         
       }
+        // vowels="aeiou"
+//      a 
+//     a e 
+//    a e i 
+//   a e i o 
+//  a e i o u
+       let vowels="aeiou"
+       num=5
+       for(i=0;i<num;i++){
+        s=""
+        for(sp=0;sp<num-i-1;sp++){
+        s=s+" ";
+        }
+        for(j=0;j<=i;j++){
+            s=s+vowels[j]+" ";
+        }
+        console.log(s)
+       }
 
     </script>
 </body>
